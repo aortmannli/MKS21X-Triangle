@@ -28,6 +28,10 @@ public class Triangle{
     Point[] vertices = new Point[]{v0, v1, v2};
     return vertices[dex];
   }
-
+  
+  public void setVertex(int index, Point newP){
+    if (index == 0) v0 = newP;
+    if (index == 1) v1 = newP;
+    if (index == 2) v2 = newP;
+}	
 }
-
